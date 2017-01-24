@@ -4,6 +4,52 @@ body {
   margin: 0;
   padding: 0;
 }
+/* 顶部 */
+.sticker {
+  position: fixed; 
+  top: -60px; 
+  left: 0; 
+  right: 0; 
+  background: #fff; 
+  background: rgba(255,255,255,.98); 
+  height: 55px; 
+  box-shadow: 0 0 3px rgba(0,0,0,.3); 
+  z-index: 10;
+}
+.titleName {
+  border: none;
+  margin: 0 0 0 50px;
+  line-height: 55px;
+  padding: 0 0 0 8px;
+}
+.myphone {
+  height: 45px;
+  margin: 13px 0 0 0;
+  line-height: 45px;
+  position: absolute;
+  top: -4px;
+  right: 15px;
+  text-align: right;
+}
+.phoneIcon {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  background: url('../images/icons.png') -45px 40px;
+  border: none;
+  right: 125px;
+  float: left;
+}
+.titleName:before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 8px;
+  top: 5px;
+  background: url('../images/icons.png') -90px -45px;
+}
+/* 主体 */
 .main {
   max-width: 1000px;
   margin: 60px auto 30px;
@@ -72,6 +118,10 @@ body {
   border-radius: 8px;
   line-height: 24px;
   overflow: hidden;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: space-between;
+  justify-content: space-between;
   -moz-box-sizing: border-box; /*Firefox3.5+*/
   -webkit-box-sizing: border-box; /*Safari3.2+*/
   -o-box-sizing: border-box; /*Opera9.6*/
@@ -80,7 +130,6 @@ body {
 }
 .person-info p {
   float: left;
-  width: 50%;
   color: #666;
 }
 .skillbox {
@@ -93,6 +142,7 @@ body {
   border-radius: 5px;
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 5px;
 }
 #color1 {
   background-color: #dff0d8;
@@ -176,6 +226,7 @@ body {
   display: inline-block;
   padding: 0px 8px;
   margin-right: 10px;
+  margin-bottom: 5px;
   background: #fbfbfb;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
