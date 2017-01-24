@@ -1,6 +1,8 @@
 body {
   background-image: url('../images/soft_wallpaper.png');
   font: 14px '微软雅黑',sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .main {
   width: 1000px;
@@ -41,6 +43,9 @@ body {
 #project:before {
   background-position: left -45px;
 }
+#edu:before {
+  background-position: right top;
+}
 .iconbox {
   width: 60px;
   height: 60px;
@@ -55,12 +60,13 @@ body {
   margin: 0 0 0 3px;
   display: inline-block;
   border-radius: 50%;
-  background: #ccc;
+  background: url('../images/photo-self.png') center;
+  background-size: cover;
 }
 .person-info {
   width: 100%;
   margin: 40px auto;
-  padding: 40px 50px;
+  padding: 20px 30px;
   background: #fbfbfb;
   border: 1px solid #f3f3f3;
   border-radius: 8px;
@@ -168,4 +174,12 @@ body {
   background: #fbfbfb;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
+}
+/*教育经历*/
+.edubox {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  color: #666;
+  margin-top: 30px;
 }
