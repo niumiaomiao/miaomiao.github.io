@@ -132,6 +132,11 @@ body {
   float: left;
   color: #666;
 }
+.introBox {
+  margin: 40px 0;
+  color: #666;
+  font-size: 14px;
+}
 .skillbox {
   margin-bottom: 40px;
 }
